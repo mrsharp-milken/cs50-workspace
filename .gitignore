@@ -8,30 +8,33 @@
 node_modules/
 vendor/
 
-# But don't ignore these files
-!/.devcontainer.json
-!/.vscode/settings.json
+!hello.py
 
-# But don't ignore these types of files
-!*.c
-!*.cpp
-!*.css
-!*.db
-!*.h
-!*.html
-!*.java
-!*.js
-!*.md
-!*.py
-!*.R
-!*.sql
-!*.ts
-!*.txt
-!Makefile
+# # Temp comment out this stuff
+# # But don't ignore these files
+# !/.devcontainer.json
+# !/.vscode/settings.json
 
-# But do ignore these files from movies for now
-**/movie/movies.db
-**/movie/output.txt
+# # But don't ignore these types of files
+# !*.c
+# !*.cpp
+# !*.css
+# !*.db
+# !*.h
+# !*.html
+# !*.java
+# !*.js
+# !*.md
+# !*.py
+# !*.R
+# !*.sql
+# !*.ts
+# !*.txt
+# !Makefile
 
-# Other ignores
-EOT
+# # But do ignore these files from movies for now
+# **/movie/movies.db
+# **/movie/output.txt
+
+# # Other ignores
+# EOT
