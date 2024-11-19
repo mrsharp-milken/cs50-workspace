@@ -4,7 +4,7 @@
 
 Use this repository to work on your CS50 projects!
 
-1. Download VSCode, python, and git (see document for full instructions)
+1. First, download [VSCode](https://code.visualstudio.com/download), [Python](https://www.python.org/downloads/macos/), and git (see document for full instructions)
 2. Open my [VSCode Profile link](https://vscode.dev/editor/profile/github/f243a61bd1b32fec27547e1ab25e24cb) and click the blue "Create in Visual Studio Code" button on the bottom right. This will import the profile I made for you, which will help install and configure a number of things.
 3. Clone this repository on Github using the green button in the upper right. When finished, copy the link to it.
 4. Open VSCode, click the files icon at the top of the left sidebar, then click "Clone Repository"
