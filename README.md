@@ -13,7 +13,9 @@ Use this repository to work on your CS50 projects!
 4. Open VSCode, click the files icon at the top of the left sidebar, then click the blue "Clone Repository" button
 5. Paste in the link you copied earlier (the link to your Github repository) and hit go.
 6. Use the menu at the top to open terminal by clicking Terminal >> New Terminal
-7. Test if you can run your code! Use `cd python-test` to move into the python-test folder then `python hello-world.py` (or `python3 hello-world.py`) to run the python file.
+7. Test if you can run your code!
+    * Use `cd python-test` to move into the python-test folder
+    * Then `python hello-world.py` (or `python3 hello-world.py`) to run the python file
 
 ## Testing and Submitting
 
