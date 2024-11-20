@@ -8,12 +8,13 @@ Use this repository to work on your CS50 projects!
     * [VSCode](https://code.visualstudio.com/download) - This is the code editor!
     * [Python](https://www.python.org/downloads/macos/) - The python "interpreter" that lets us run python programs
     * [git](https://sourceforge.net/projects/git-osx-installer/) - git is the program that saves and your work, it's a lot like google drive but for programmers
-2. Open my [VSCode Profile link](https://vscode.dev/editor/profile/github/f243a61bd1b32fec27547e1ab25e24cb) and click the blue "Create in Visual Studio Code" button on the bottom right. This will import the profile I made for you, which will help install and configure a number of things.
-3. Clone this repository on Github using the green button in the upper right. When finished, copy the link to it.
-4. Open VSCode, click the files icon at the top of the left sidebar, then click the blue "Clone Repository" button
-5. Paste in the link you copied earlier (the link to your Github repository) and hit go.
-6. Use the menu at the top to open terminal by clicking Terminal >> New Terminal
-7. Test if you can run your code!
+2. Download the CS50 VSCode Profile [with this link](https://drive.google.com/uc?export=download&id=19O9L1eGiU19j441sVVzeuvSFwhzLx5Po)
+3. 
+4. Clone this repository on Github using the green "Use as Template" button in the upper right. When finished, copy the link to it.
+5. Open VSCode, click the files icon at the top of the left sidebar, then click the blue "Clone Repository" button
+6. Paste in the link you copied earlier (the link to your Github repository) and hit go.
+7. Use the menu at the top to open terminal by clicking Terminal >> New Terminal
+8. Test if you can run your code!
     * Use `cd python-test` to move into the python-test folder
     * Then `python hello-world.py` (or `python3 hello-world.py`) to run the python file
 
