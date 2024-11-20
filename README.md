@@ -14,9 +14,9 @@ Use this repository to work on your CS50 projects!
 4. While the profile installs, go back to Github and create your own copy of this repository using the green "Use as Template" button in the upper right. Use `cs50-workspace` as the repository name, and make sure the repository is Private. When finished, copy the link to it.
 5. Go back to VSCode, use the CS50 profile by clicking on the gear icon in the bottom left. Click "Profiles" >> "cs50 student". If you don't see it, you might have to wait a bit for the profile to finish installing. You'll know you're using the profile when the icon at the bottom of the left sidebar changes from a gear to a little robot head.
 6. Now find the file explorer icon on the top of the left sidebar and click it. Then click the blue "Clone Repository" button
-6. Paste in the link you copied earlier (the link to your Github repository) and hit go.
-7. Use the menu at the top to open terminal by clicking Terminal >> New Terminal
-8. Test if you can run your code!
+7. Paste the link to you github repository you copied earlier here. (The link should look like `https://github.com/mrsharp-milken/cs50-workspace` but with your username instead of `mrsharp-milken`)
+8. Use the menu at the top to open terminal by clicking Terminal >> New Terminal
+9. Test if you can run your code!
     * Use `cd python-test` to move into the python-test folder
     * Then `python hello-world.py` (or `python3 hello-world.py`) to run the python file
 
