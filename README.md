@@ -4,12 +4,13 @@
 
 Use this repository to work on your CS50 projects!
 
-1. First, download and install these three programs:
+1. First, download and install these four programs:
     * [VSCode](https://code.visualstudio.com/download) - This is the code editor!
     * [Python](https://www.python.org/downloads/macos/) - The python "interpreter" that lets us run python programs
     * [git](https://sourceforge.net/projects/git-osx-installer/) - git is the program that saves and your work, it's a lot like google drive but for programmers
+    * [Github CLI](https://github.com/cli/cli/releases/download/v2.62.0/gh_2.62.0_macOS_universal.pkg) - Github  CLI is what lets you save, submit, and check your code using the command line, you need it to use submit50 and check50.
 2. Download the CS50 VSCode Profile [with this link](https://drive.google.com/uc?export=download&id=19O9L1eGiU19j441sVVzeuvSFwhzLx5Po)
-3. 
+3.
 4. Clone this repository on Github using the green "Use as Template" button in the upper right. When finished, copy the link to it.
 5. Open VSCode, click the files icon at the top of the left sidebar, then click the blue "Clone Repository" button
 6. Paste in the link you copied earlier (the link to your Github repository) and hit go.
