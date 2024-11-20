@@ -5,6 +5,7 @@
 Use this repository to work on your CS50 projects!
 
 1. First, download and install these three programs:
+
   a. [VSCode](https://code.visualstudio.com/download) - This is the code editor!
   b. [Python](https://www.python.org/downloads/macos/) - The python "interpreter" that lets us run python programs
   c. [git](https://sourceforge.net/projects/git-osx-installer/) - git is the program that saves and your work, it's a lot like google drive but for programmers
