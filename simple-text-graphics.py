@@ -8,25 +8,17 @@ ADD YOUR DESCRIPTION HERE
 import tkinter
 from tkinter import simpledialog
 
-CANVAS_WIDTH = 600      # Width of drawing canvas in pixels
+CANVAS_WIDTH = 500      # Width of drawing canvas in pixels
 CANVAS_HEIGHT = 300     # Height of drawing canvas in pixels
 
 
-def draw_rectangle(canvas):
-    """Draw a rectangle with the specified width centered on the canvas."""
+def write_text(canvas):
 
-    width = simpledialog.askstring("Rectangle", "Enter rectangle width:")
-    width = int(width)
 
-    # Rectangle dimensions
-    height = 50  # Fixed height
-    x1 = (CANVAS_WIDTH - width) // 2
-    y1 = (CANVAS_HEIGHT - height) // 2
-    x2 = x1 + width
-    y2 = y1 + height
+    size = simpledialog.askstring("Font Size", "Enter a number for the font size:")
+    size = int(size)
 
-    # Draw the rectangle
-    canvas.create_rectangle(x1, y1, x2, y2, fill="blue", outline="black")
+    canvas.create_text(100, 100, text="Hello, World!", font=("Arial", size), fill="black")
 
 
 
@@ -44,7 +36,7 @@ def make_canvas(width, height):
     """
     top = tkinter.Tk()
     top.minsize(width=width + 10, height=height + 10)
-    top.title('Circle')
+    top.title('Python Graphics')
     canvas = tkinter.Canvas(top, width=width + 2, height=height + 2)
     canvas.pack()
     canvas.xview_scroll(8, 'units')  # This is so (0, 0) works correctly,
@@ -57,11 +49,8 @@ def make_canvas(width, height):
 
 
 def main():
-    """
-    This program, when completed, displays a pyramid graphically.
-    """
     canvas = make_canvas(CANVAS_WIDTH, CANVAS_HEIGHT)
-    draw_rectangle(canvas)
+    write_text(canvas)
     tkinter.mainloop()
 
 
