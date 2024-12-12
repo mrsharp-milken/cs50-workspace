@@ -1,6 +1,6 @@
 # CS50 Workspace!
 
-Use this repository to work on your CS50 projects!
+Use this repository to work on your projects locally! Developing locally lets us use cool stuff like graphics libraries for data visualization.
 
 1. First, download and install these four programs:
     * [VSCode](https://code.visualstudio.com/download) - This is the code editor!
