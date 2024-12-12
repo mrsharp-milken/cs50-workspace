@@ -1,12 +1,20 @@
+"""
+File: pyramid.py
+----------------
+ADD YOUR DESCRIPTION HERE
+"""
+
+
 import tkinter
+
+
+CANVAS_WIDTH = 600      # Width of drawing canvas in pixels
+CANVAS_HEIGHT = 300     # Height of drawing canvas in pixels
+
 
 def draw_rectangle(canvas, width):
     """Draw a rectangle with the specified width centered on the canvas."""
-    # Convert width input to an integer
     width = int(width)
-
-    # Clear the canvas
-    canvas.delete("all")
 
     # Rectangle dimensions
     height = 50  # Fixed height
@@ -18,21 +26,53 @@ def draw_rectangle(canvas, width):
     # Draw the rectangle
     canvas.create_rectangle(x1, y1, x2, y2, fill="blue", outline="black")
 
-# Set up the window
-window = tkinter.Tk()
-window.title("Draw a Rectangle")
 
-# Canvas dimensions
-CANVAS_WIDTH = 400
-CANVAS_HEIGHT = 300
-canvas = tkinter.Canvas(window, width=CANVAS_WIDTH, height=CANVAS_HEIGHT, bg="white")
-canvas.pack()
 
-# Prompt for user input
-width_input = input("Enter rectangle width: ")
 
 # Draw the rectangle
-draw_rectangle(canvas, width_input)
+if width is not None:  # Check if the user provided input
+    draw_rectangle(canvas, width)
 
 # Run the tkinter event loop
 window.mainloop()
+
+
+######## DO NOT MODIFY ANY CODE BELOW THIS LINE ###########
+
+# This function is provided to you and should not be modified.
+# It creates a window that contains a drawing canvas that you
+# will use to make your drawings.
+def make_canvas(width, height):
+    """
+    DO NOT MODIFY
+    Creates and returns a drawing canvas
+    of the given int size with a blue border,
+    ready for drawing.
+    """
+    top = tkinter.Tk()
+    top.minsize(width=width + 10, height=height + 10)
+    top.title('pyramid')
+    canvas = tkinter.Canvas(top, width=width + 2, height=height + 2)
+    canvas.pack()
+    canvas.xview_scroll(8, 'units')  # This is so (0, 0) works correctly,
+    canvas.yview_scroll(8, 'units')  # otherwise it's clipped off
+
+    # Draw blue boundary line at bottom of canvas
+    canvas.create_line(0, height, width, height, width=1, fill='blue')
+
+    return canvas
+
+
+def main():
+    """
+    This program, when completed, displays a pyramid graphically.
+    """
+    canvas = make_canvas(CANVAS_WIDTH, CANVAS_HEIGHT)
+    # Get rectangle width using simpledialog
+    width = simpledialog.askstring("Rectangle", "Enter rectangle width:")
+    draw_rectangle(canvas)
+    tkinter.mainloop()
+
+
+if __name__ == '__main__':
+    main()
