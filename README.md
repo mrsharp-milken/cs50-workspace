@@ -35,17 +35,37 @@ Use this repository to work on your CS50 projects!
 
 To make sure you don't lose your code, let's connect your GitHub account so your code autosaves to Github!
 
-1. Double check that you've downloaded and installed Github CLI. We'll check this by trying a command to check the version of Github CLI. This command will only work if we have it installed. Open Terminal and type:
+1. Double check that you've downloaded and installed Github CLI. We'll check this by trying a command to check the version of Github CLI. This command will only work if we have it installed. Open Terminal and type `gh --version`
+
+_You're good if you see a version number, like `gh version 2.43.1 (2024-01-31)` (your numbers can be different). If you get `zsh: command not found: gh`, first try quitting Terminal and reopening, and try again. If that still doesn't work, then you need to try installing Github CLI again (see link at the top)._
+
+2. Now we want to login and connect GitHub CLI with GitHub. Type this command: `gh auth login`. Then (using your keyboard) select the following options:
+    * What account do you want to log into? **Github.com**
+    * What is your preferred protocol for Git operations on this host? **HTTPS**
+    * Authenticate Git with your GitHub credentials? **Y**
+    * How would you like to authenticate GitHub CLI? **Login with a web browser**
+
+3. Copy the 8-letter code shown in the terminal, then hit enter. Terminal will open your web browser to GitHub.com and you can paste the 8-letter code there.
+
+4. Once you've finished those steps successfully, quit Terminal.
+
+5. Now, let's check that everything is working with a command that tests our ability to save code to Github. Go to VSCode and make sure we have the cs50-workspace folder open, and the robot icon in bottom left shows our profile is enable. Then open VSCode's terminal and run this command: `git push --dry-run`
+
+_You're good if you see `Everything up-to-date`. If you see a different error message, screenshot it to show to Mr. Sharp._
+
+## Python Graphics
+
+1. Test graphics with a basic command: `python3 -m tkinter`. It should give you a little window like this:
+<img width="178" alt="image" src="https://github.com/user-attachments/assets/2e95bb2b-aacb-41fd-8dd1-2a8b07bf1518" />
+
+2. Next, try a more substantial graphics program. Run this command to download the program:
 ```bash
-gh --version
+curl -O https://raw.githubusercontent.com/mrsharp-milken/python-samples/refs/heads/main/simple-text-graphics.py
 ```
-All clear if you see something like `gh version 2.43.1 (2024-01-31)` (your numbers can be different). If you get `zsh: command not found: gh`, first try quitting Terminal and reopening, and try again. If that still doesn't work, then you need to try installing Github CLI again (see instructions at the top).
 
-2. stuff
+3. Run the program. What does it do? Look around!
 
-## Testing and Submitting
-
-Instructions coming soon!
+4. This program uses python's default graphics library, called **tkinter**. We'll be using it for the next project. Look it up, then add some code to draw a different shape, like a rectangle or circle.
 
 ## Notes
 
