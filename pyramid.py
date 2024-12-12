@@ -6,14 +6,16 @@ ADD YOUR DESCRIPTION HERE
 
 
 import tkinter
-
+from tkinter import simpledialog
 
 CANVAS_WIDTH = 600      # Width of drawing canvas in pixels
 CANVAS_HEIGHT = 300     # Height of drawing canvas in pixels
 
 
-def draw_rectangle(canvas, width):
+def draw_rectangle(canvas):
     """Draw a rectangle with the specified width centered on the canvas."""
+
+    width = simpledialog.askstring("Rectangle", "Enter rectangle width:")
     width = int(width)
 
     # Rectangle dimensions
@@ -42,7 +44,7 @@ def make_canvas(width, height):
     """
     top = tkinter.Tk()
     top.minsize(width=width + 10, height=height + 10)
-    top.title('pyramid')
+    top.title('Circle')
     canvas = tkinter.Canvas(top, width=width + 2, height=height + 2)
     canvas.pack()
     canvas.xview_scroll(8, 'units')  # This is so (0, 0) works correctly,
@@ -59,9 +61,7 @@ def main():
     This program, when completed, displays a pyramid graphically.
     """
     canvas = make_canvas(CANVAS_WIDTH, CANVAS_HEIGHT)
-    # Get rectangle width using simpledialog
-    width = tkinter.simpledialog.askstring("Rectangle", "Enter rectangle width:")
-    draw_rectangle(canvas, width)
+    draw_rectangle(canvas)
     tkinter.mainloop()
 
 
