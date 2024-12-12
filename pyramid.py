@@ -20,8 +20,26 @@ def draw_pyramid(canvas):
     """
     ADD YOUR COMMENT
     """
-    # Your code goes here
-    pass
+    for row in range(BRICKS_IN_BASE):
+        # Calculate the number of bricks in the current row
+        bricks_in_row = BRICKS_IN_BASE - row
+
+        # Calculate the horizontal starting position for the first brick
+        row_width = bricks_in_row * BRICK_WIDTH
+        start_x = (CANVAS_WIDTH - row_width) // 2
+
+        # Calculate the vertical position for the row
+        start_y = CANVAS_HEIGHT - (row + 1) * BRICK_HEIGHT
+
+        for brick in range(bricks_in_row):
+            # Calculate the position of each brick
+            x1 = start_x + brick * BRICK_WIDTH
+            y1 = start_y
+            x2 = x1 + BRICK_WIDTH
+            y2 = y1 + BRICK_HEIGHT
+
+            # Draw the brick as a rectangle
+            canvas.create_rectangle(x1, y1, x2, y2)
 
 
 ######## DO NOT MODIFY ANY CODE BELOW THIS LINE ###########
