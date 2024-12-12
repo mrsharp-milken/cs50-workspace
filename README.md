@@ -1,5 +1,3 @@
-*TIP: Open me with right-click >> Open Preview or click the icon in the upper right with the magnifying glass.*
-
 # CS50 Workspace!
 
 Use this repository to work on your CS50 projects!
