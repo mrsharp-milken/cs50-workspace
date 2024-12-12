@@ -28,15 +28,6 @@ def draw_rectangle(canvas, width):
 
 
 
-
-# Draw the rectangle
-if width is not None:  # Check if the user provided input
-    draw_rectangle(canvas, width)
-
-# Run the tkinter event loop
-window.mainloop()
-
-
 ######## DO NOT MODIFY ANY CODE BELOW THIS LINE ###########
 
 # This function is provided to you and should not be modified.
@@ -69,8 +60,8 @@ def main():
     """
     canvas = make_canvas(CANVAS_WIDTH, CANVAS_HEIGHT)
     # Get rectangle width using simpledialog
-    width = simpledialog.askstring("Rectangle", "Enter rectangle width:")
-    draw_rectangle(canvas)
+    width = tkinter.simpledialog.askstring("Rectangle", "Enter rectangle width:")
+    draw_rectangle(canvas, width)
     tkinter.mainloop()
 
 
