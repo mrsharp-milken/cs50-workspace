@@ -18,7 +18,9 @@ def write_text(canvas):
     size = simpledialog.askstring("Font Size", "Enter a number for the font size:")
     size = int(size)
 
-    canvas.create_text(100, 100, text="Hello, World!", font=("Arial", size), fill="black")
+    center_x = CANVAS_WIDTH // 2
+
+    canvas.create_text(center_x, 100, text="Hello World!", font=("Arial", size), fill="black")
 
 
 
