@@ -1,28 +1,51 @@
 import tkinter
 
-def change_color(canvas, color):
-    """Change the background color of the canvas."""
-    canvas.config(bg=color)
+def draw_rectangle(canvas, width):
+    """Draw a rectangle with the specified width centered on the canvas."""
+    try:
+        # Convert width input to an integer
+        width = int(width)
+
+        # Clear the canvas
+        canvas.delete("all")
+
+        # Rectangle dimensions
+        height = 50  # Fixed height
+        x1 = (CANVAS_WIDTH - width) // 2
+        y1 = (CANVAS_HEIGHT - height) // 2
+        x2 = x1 + width
+        y2 = y1 + height
+
+        # Draw the rectangle
+        canvas.create_rectangle(x1, y1, x2, y2, fill="blue", outline="black")
+    except ValueError:
+        # Handle invalid input
+        result_label.config(text="Please enter a valid number.")
 
 # Set up the window
 window = tkinter.Tk()
-window.title("Change Background Color")
+window.title("Draw a Rectangle")
 
-# Set up the canvas
+# Canvas dimensions
 CANVAS_WIDTH = 400
 CANVAS_HEIGHT = 300
 canvas = tkinter.Canvas(window, width=CANVAS_WIDTH, height=CANVAS_HEIGHT, bg="white")
 canvas.pack()
 
-# Create buttons to change the color
-button_red = tkinter.Button(window, text="Red", command=lambda: change_color(canvas, "red"))
-button_red.pack(side=tkinter.LEFT, padx=10, pady=10)
+# Entry widget for input
+entry_label = tkinter.Label(window, text="Enter rectangle width:")
+entry_label.pack()
+width_entry = tkinter.Entry(window)
+width_entry.pack()
 
-button_green = tkinter.Button(window, text="Green", command=lambda: change_color(canvas, "green"))
-button_green.pack(side=tkinter.LEFT, padx=10, pady=10)
+# Button to draw the rectangle
+draw_button = tkinter.Button(window, text="Draw Rectangle",
+                              command=lambda: draw_rectangle(canvas, width_entry.get()))
+draw_button.pack()
 
-button_blue = tkinter.Button(window, text="Blue", command=lambda: change_color(canvas, "blue"))
-button_blue.pack(side=tkinter.LEFT, padx=10, pady=10)
+# Label to show feedback
+result_label = tkinter.Label(window, text="")
+result_label.pack()
 
 # Run the tkinter event loop
 window.mainloop()
