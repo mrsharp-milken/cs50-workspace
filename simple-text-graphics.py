@@ -1,10 +1,3 @@
-"""
-File: pyramid.py
-----------------
-ADD YOUR DESCRIPTION HERE
-"""
-
-
 import tkinter
 from tkinter import simpledialog
 
@@ -12,8 +5,7 @@ CANVAS_WIDTH = 500      # Width of drawing canvas in pixels
 CANVAS_HEIGHT = 300     # Height of drawing canvas in pixels
 
 
-def write_text(canvas):
-
+def draw(canvas):
 
     size = simpledialog.askstring("Font Size", "Enter a number for the font size:")
     size = int(size)
@@ -24,7 +16,7 @@ def write_text(canvas):
 
 
 
-######## DO NOT MODIFY ANY CODE BELOW THIS LINE ###########
+
 
 # This function is provided to you and should not be modified.
 # It creates a window that contains a drawing canvas that you
@@ -52,7 +44,7 @@ def make_canvas(width, height):
 
 def main():
     canvas = make_canvas(CANVAS_WIDTH, CANVAS_HEIGHT)
-    write_text(canvas)
+    draw(canvas)
     tkinter.mainloop()
 
 
