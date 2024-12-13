@@ -23,7 +23,7 @@ Use this repository to work on your projects locally! Developing locally lets us
 9. Use the menu at the top to open terminal by clicking (using the menu bar on top of your screen) Terminal >> New Terminal
 10. Test if you can run your code!
     * Use `cd python-test` to move into the python-test folder
-    * Then `python3 hello-world.py` to run the python file. **NOTE:** when developing locally, we use `python3` instead of `python`. 
+    * Then `python3 hello-world.py` to run the python file. **NOTE:** when developing locally, we use `python3` instead of `python`. _While you can change that, [it's not recommended.](https://xkcd.com/1987)_
 
 ### It should look like this when you're done:
 
