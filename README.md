@@ -2,27 +2,28 @@
 
 Use this repository to work on your projects locally! Developing locally lets us use cool stuff like graphics libraries for data visualization.
 
-1. First, download and install these four programs:
+1. **Tip:** These steps involves a lot of switching between different windows and things popping up. Fullscreening windows makes managing multiple windows much harder and hides these popups. I strongly recommend not fullscreening anything as you go through this process. 
+2. With that, download and install these four programs:
     * [VSCode](https://code.visualstudio.com/download) - This is the code editor!
-    * [Python](https://www.python.org/downloads/macos/) - The python "interpreter" that lets us run python programs.
+    * [Python](https://www.python.org/downloads/macos/) - The python "interpreter" that lets us run python programs. Choose the "latest stable" macOS universal installer.
     * [git](https://sourceforge.net/projects/git-osx-installer/) - git is the program that saves and your work, it's a lot like google drive but for programmers. 
         * **NOTE:** If you get an "unknown developer" warning when you try to open the installer package, try going to Finder, right clicking the installer package, then clicking Open from that menu. This should give you the option to open and complete the install.
         * **NOTE:** If you get "macOS can't ensure the security of this program" you have to to go to your system settings / system preferences >> Security and Privacy >> (Scroll down) ... Open Anyway. Then follow the prompts to finish opening and installing.
     * [Github CLI](https://github.com/cli/cli/releases/download/v2.62.0/gh_2.62.0_macOS_universal.pkg) - Github  CLI is what lets you save, submit, and check your code using the command line, you need it to use submit50 and check50. You might also get an "unknown developer" warning here, follow the same steps as above.
-2. Before moving on, make sure you've installed everything, not just downloaded it. Every file you just downloaded is an installer, and many of the steps below won't work until you run the installer.
-3. Download the CS50 VSCode Profile [with this link](https://drive.google.com/uc?export=download&id=19O9L1eGiU19j441sVVzeuvSFwhzLx5Po) - this will help us install and setup all of the important extensions and settings for you after we import it.
-4. Open VSCode, then click the gear icon at the bottom of the left sidebar. Click "Profiles" >> "Import Profile" >> "Select File" and choose the file you just downloaded, with the name `cs50.code-profile`. If it worked, you should see a small loading indicator on the bottom of your VSCode window.
-5. While the profile installs, come back here to Github and create your own copy of this repository. using the green "Use as Template" button in the upper right.
+3. Before moving on, make sure you've installed everything, not just downloaded it. Every file you just downloaded is an installer, and many of the steps below won't work until you run the installer.
+4. Download the CS50 VSCode Profile [with this link](https://drive.google.com/uc?export=download&id=19O9L1eGiU19j441sVVzeuvSFwhzLx5Po) - this will help us install and setup all of the important extensions and settings for you after we import it.
+5. Open VSCode, then click the gear icon at the bottom of the left sidebar. Click "Profiles" >> "Import Profile" >> "Select File" and choose the file you just downloaded, with the name `cs50.code-profile`. If it worked, you should see a small loading indicator on the bottom of your VSCode window.
+6. While the profile installs, come back here to Github and create your own copy of this repository. using the green "Use as Template" button in the upper right.
     * Click the green "Use as Template" button in the upper right of this page
     * Use `cs50-workspace` as the repository name
     * **Make sure the repository is Private**
     * (the other settings don't matter)
     * When finished, copy the link to your new repo
-6. Now you'll finish setting up the profile. Go back to VSCode, and choose the CS50 profile by clicking on the gear icon in the bottom left. Click "Profiles" >> "cs50 student". If you don't see it, you might have to wait a bit longer for the profile to finish installing. You'll know you're correctly using the profile when the icon at the bottom of the left sidebar changes from a gear to a little robot head.
-7. Now find the file explorer icon on the top of the left sidebar and click it. Then click the blue "Clone Repository" button
-8. Paste the link to you github repository you copied earlier here. (The link should look like `https://github.com/YOUR_USERNAME/cs50-workspace` but with your username instead of `YOUR_USERNAME`). Choose a reasonable location, like your user folder, Documents, or Desktop. This step will download the files in the github repository, and put them in a folder called "cs50-workspace".
-9. Use the menu at the top to open terminal by clicking (using the menu bar on top of your screen) Terminal >> New Terminal
-10. Test if you can run your code!
+7. Now you'll finish setting up the profile. Go back to VSCode, and choose the CS50 profile by clicking on the gear icon in the bottom left. Click "Profiles" >> "cs50 student". If you don't see it, you might have to wait a bit longer for the profile to finish installing. You'll know you're correctly using the profile when the icon at the bottom of the left sidebar changes from a gear to a little robot head.
+8. Now find the file explorer icon on the top of the left sidebar and click it. Then click the blue "Clone Repository" button
+9. Paste the link to you github repository you copied earlier here. (The link should look like `https://github.com/YOUR_USERNAME/cs50-workspace` but with your username instead of `YOUR_USERNAME`). Choose a reasonable location, like your user folder, Documents, or Desktop. This step will download the files in the github repository, and put them in a folder called "cs50-workspace".
+10. Use the menu at the top to open terminal by clicking (using the menu bar on top of your screen) Terminal >> New Terminal
+11. Test if you can run your code!
     * Use `cd python-test` to move into the python-test folder
     * Then `python3 hello-world.py` to run the python file. NOTE when developing locally, we use `python3` instead of `python`. 
 
