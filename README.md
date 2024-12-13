@@ -51,7 +51,7 @@ To make sure you don't lose your code, let's connect your GitHub account so your
 _You're good if you see a version number, like `gh version 2.43.1 (2024-01-31)` (your numbers can be different). If you get `zsh: command not found: gh`, first try quitting Terminal and reopening, and try again. If that still doesn't work, then you need to try installing Github CLI again (see link at the top)._
 
 2. Now we want to login and connect GitHub CLI with GitHub. Type this command: `gh auth login`. Then (using your keyboard) select the following options:
-    * What account do you want to log into? **Github.com**
+    * Where do you use Github? **Github.com**
     * What is your preferred protocol for Git operations on this host? **HTTPS**
     * Authenticate Git with your GitHub credentials? **Y**
     * How would you like to authenticate GitHub CLI? **Login with a web browser**
