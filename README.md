@@ -52,7 +52,7 @@ _You're good if you see a version number, like `gh version 2.43.1 (2024-01-31)` 
 
 4. Once you've finished those steps successfully, quit Terminal.
 
-5. Now, let's check that everything is working with a command that tests our ability to save code to Github. Go to VSCode and make sure we have the cs50-workspace folder open, and the robot icon in bottom left shows our profile is enable. Then open VSCode's terminal and run this command: `git push --dry-run`
+5. Now, let's check that everything is working with a command that tests our ability to save code to Github. Go to VSCode and make sure we have the cs50-workspace folder open, and the robot icon in bottom left shows our profile is enabled. Then open VSCode's terminal and run this command: `git push --dry-run`
 
 _You're good if you see `Everything up-to-date`. If you see a different error message, screenshot it to show to Mr. Sharp._
 
