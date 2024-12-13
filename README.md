@@ -3,7 +3,7 @@
 Use this repository to work on your projects locally! Developing locally lets us use cool stuff like graphics libraries for data visualization.
 
 1. **Tip:** These steps involves a lot of switching between different windows and things popping up. Fullscreening windows makes managing multiple windows much harder and hides these popups. I strongly recommend not fullscreening anything as you go through this process. 
-2. With that, download and install these four programs:
+2. With that, download and install these five tools:
     * [Python](https://www.python.org/downloads/macos/) - The python "interpreter" that lets us run python programs. Choose the "latest stable" macOS universal installer. **IMPORTANT:** Once your download finishes, you still must run the installer you just downloaded to actually install Python.
     * [Homebrew](https://brew.sh/) - Homebrew is a command line tool for installing development tools. It's used by almost all software engineers who code on Macs.  We'll use it to install the other tools below, which should make our life way easier. _If it sounds silly to install something to help us install things, you're not wrong._
     * [VSCode](https://formulae.brew.sh/cask/visual-studio-code) - This is the code editor! It's the same one cs50.dev uses, so things will look pretty similar.
