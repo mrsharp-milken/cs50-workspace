@@ -7,11 +7,12 @@ Use this repository to work on your projects locally! Developing locally lets us
     * [Python](https://www.python.org/downloads/macos/) - The python "interpreter" that lets us run python programs.
     * [git](https://sourceforge.net/projects/git-osx-installer/) - git is the program that saves and your work, it's a lot like google drive but for programmers. 
         * **NOTE:** If you get an "unknown developer" warning when you try to open the installer package, try going to Finder, right clicking the installer package, then clicking Open from that menu. This should give you the option to open and complete the install.
-        * **NOTE:** If you get "macOS can't ensure the security of this program" you have to to go to your system settings / system preferences >> Security and Privacy >> (Scroll down) ... Open Anyway. Then you'll have to click "Open Anyway" a few more times.
+        * **NOTE:** If you get "macOS can't ensure the security of this program" you have to to go to your system settings / system preferences >> Security and Privacy >> (Scroll down) ... Open Anyway. Then follow the prompts to finish opening and installing.
     * [Github CLI](https://github.com/cli/cli/releases/download/v2.62.0/gh_2.62.0_macOS_universal.pkg) - Github  CLI is what lets you save, submit, and check your code using the command line, you need it to use submit50 and check50. You might also get an "unknown developer" warning here, follow the same steps as above.
-2. Download the CS50 VSCode Profile [with this link](https://drive.google.com/uc?export=download&id=19O9L1eGiU19j441sVVzeuvSFwhzLx5Po) - this will help us install and setup all of the important extensions and settings for you after we import it.
-3. Open VSCode, then click the gear icon at the bottom of the left sidebar. Click "Profiles" >> "Import Profile" >> "Select File" and choose the file you just downloaded, with the name `cs50.code-profile`. If it worked, you should see a small loading indicator on the bottom of your VSCode window.
-4. While the profile installs, come back here to Github and create your own copy of this repository. using the green "Use as Template" button in the upper right.
+2. Before moving on, make sure you've installed everything, not just downloaded it. Every file you just downloaded is an installer, and many of the steps below won't work until you run the installer.
+3. Download the CS50 VSCode Profile [with this link](https://drive.google.com/uc?export=download&id=19O9L1eGiU19j441sVVzeuvSFwhzLx5Po) - this will help us install and setup all of the important extensions and settings for you after we import it.
+4. Open VSCode, then click the gear icon at the bottom of the left sidebar. Click "Profiles" >> "Import Profile" >> "Select File" and choose the file you just downloaded, with the name `cs50.code-profile`. If it worked, you should see a small loading indicator on the bottom of your VSCode window.
+5. While the profile installs, come back here to Github and create your own copy of this repository. using the green "Use as Template" button in the upper right.
     * Click the green "Use as Template" button in the upper right of this page
     * Use `cs50-workspace` as the repository name
     * **Make sure the repository is Private**
