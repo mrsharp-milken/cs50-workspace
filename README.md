@@ -10,20 +10,32 @@ Use this repository to work on your projects locally! Developing locally lets us
     * [git](https://formulae.brew.sh/formula/git) - git is the program that saves and your work, it's sort of like google drive but for code. 
     * [Github CLI](https://formulae.brew.sh/formula/gh) - Github  CLI is what lets you save, submit, and check your code using the command line, you need it to use submit50 and check50. 
 3. Download the CS50 VSCode Profile [with this link](https://drive.google.com/uc?export=download&id=19O9L1eGiU19j441sVVzeuvSFwhzLx5Po) - this will help us install and setup all of the important extensions and settings for you after we import it.
-4. Open VSCode. (Homebrew installed it! You can open it like a regular Application, or open it from Terminal by running `code`.) When VSCode is open, click the gear icon at the bottom of the left sidebar. Click "Profiles" >> "Import Profile" >> "Select File" and choose the file you just downloaded, with the name `cs50.code-profile`. You might need to "select" it by clicking the check mark next to it. If it worked, you should see a small loading indicator on the bottom of your VSCode window.
+4. Open VSCode. (Homebrew installed it! You can open it like a regular Application, or open it from Terminal by running `code`.) 
+    * When VSCode is open, click the gear icon at the bottom of the left sidebar. 
+    * Click "Profiles" >> "Import Profile" >> "Select File" and choose the file you just downloaded, with the name `cs50.code-profile`. 
+    * You might need to "select" it by clicking the check mark next to it. 
+    * If it worked, you should see a small loading indicator on the bottom of your VSCode window.
 5. While things are installing, you can come back here to Github and create your own copy of this repository. Click the green "Use as Template" button in the upper right of this page.
     * Click the green "Use as Template" button in the upper right of this page
     * Use `cs50-workspace` as the repository name
     * **Make sure the repository is Private**
     * (the other settings don't matter)
     * When finished, copy the link to your new repo
-6. Now you'll finish setting up the profile. Go back to VSCode, and choose the CS50 profile by clicking on the gear icon in the bottom left. Click "Profiles" >> "cs50 student". If you don't see it, you might have to wait a bit longer for the profile to finish installing. You'll know you're correctly using the profile when the icon at the bottom of the left sidebar changes from a gear to a little robot head.
-7. Now find the file explorer icon on the top of the left sidebar and click it. Then click the blue "Clone Repository" button. 
-8. Paste the link to you github repository you copied earlier here. (The link should look like `https://github.com/YOUR_USERNAME/cs50-workspace` but with your username instead of `YOUR_USERNAME`). Choose a reasonable location, like your user folder, Documents, or Desktop. This step will download the files in the github repository, and put them in a folder called "cs50-workspace".
-9. Use the menu at the top to open terminal by clicking (using the menu bar on top of your screen) Terminal >> New Terminal
-10. Test if you can run your code!
+6. Now you'll finish setting up the profile. 
+    * Go back to VSCode, and choose the CS50 profile by clicking on the gear icon in the bottom left. 
+    * Click "Profiles" >> "cs50 student". If you don't see it, you might have to wait a bit longer for the profile to finish installing. 
+    * You'll know you're correctly using the profile when the icon at the bottom of the left sidebar changes from a gear to a little robot head.
+7. Next, you'll download the starter files from your github repo.
+    * Find the file explorer icon on the top of the left sidebar and click it. 
+    * Click the blue "Clone Repository" button. 
+    * Paste the link to you github repository you copied earlier here. (The link should look like `https://github.com/YOUR_USERNAME/cs50-workspace` but with your username instead of `YOUR_USERNAME`). 
+    * Choose a location you'll remember, like your user folder, Documents, or Desktop. 
+    * This step will download the files in the github repository, and put them in a folder called "cs50-workspace".
+    * You'll know this worked when you can see some files show up on the left like `python-test` and `README.md`
+8. Test if you can run your code!
+    * Open terminal by clicking (on the menu bar on top of your screen) Terminal >> New Terminal
     * Use `cd python-test` to move into the python-test folder
-    * Then `python3 hello-world.py` to run the python file. **NOTE:** when developing locally, we use `python3` instead of `python`. _While you can change that, [it's not recommended.](https://xkcd.com/1987)_
+    * Then `python3 hello-world.py` to run the python file. **NOTE:** when developing locally, we use `python3` instead of `python`. _While you can change this, [it's not recommended.](https://xkcd.com/1987)_
 
 ### It should look like this when you're done:
 
