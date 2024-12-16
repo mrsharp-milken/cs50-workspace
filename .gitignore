@@ -33,5 +33,8 @@ vendor/
 **/movie/movies.db
 **/movie/output.txt
 
+# Ignore large data/text files
+**/data/*.txt
+
 # Other ignores
 EOT
