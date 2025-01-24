@@ -76,7 +76,7 @@ curl -O https://raw.githubusercontent.com/mrsharp-milken/python-samples/refs/hea
 
 3. Run the program. What does it do? Look around!
 
-4. This program uses python's default graphics library, called **tkinter**. We'll be using it for the next project. Look it up, then add some code to draw a different shape, like a rectangle or circle.
+4. This program uses python's default graphics library, called **tkinter**. We'll be using it for the next project. For now, use google to help you add code to draw a rectangle or circle using the **tkinter** library.
 
 ## Submitting
 
