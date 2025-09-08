@@ -106,7 +106,7 @@ _You're good if you see a version number, like `gh version 2.43.1 (2024-01-31)` 
 5. Now, let's check that everything is working with a command that tests our ability to save code to Github. Go to VSCode and make sure we have the cs50-workspace folder open, and the robot icon in bottom left shows our profile is enabled. Then open VSCode's terminal and run these commands: 
 
 ```terminal
-git commit -am "first commit!"
+git commit -am "first commit"
 ```
 
 ```terminal
