@@ -80,7 +80,7 @@ curl -O https://raw.githubusercontent.com/mrsharp-milken/python-samples/refs/hea
 
 ## Submitting
 
-Once you've completed Step 4 above, **take a screenshot that shows the graphics and the code you added, then submit it on MyMilken.**
+Once you've completed Step 4 above, **take a screenshot that shows the graphics and the code you added, then submit it on Blackbaud.**
 
 For other assignments, we'll submit using the `submit50` tool via the command line. It's worth installing `submit50` and `check50` now so you don't have to do it last minute later:
 
