@@ -37,7 +37,7 @@ Use this repository to work on your projects locally! Developing locally lets us
 
 <br/>
 
-6. While things are installing, you can come back here to Github and create your own copy of this repository. Click the green "Use as Template" button in the upper right of this page.
+6. While things are installing, you can come back here to Github and create your own copy of this repository. Click the green "Use as Template" button in the upper right of [this page](https://github.com/mrsharp-milken/cs50-workspace/tree/no-prior-cs50).
     * Click the green "Use as Template" button in the upper right of this page
     * Use `cs50-workspace` as the repository name
     * **Make sure the repository is Private**
@@ -106,7 +106,7 @@ _You're good if you see a version number, like `gh version 2.43.1 (2024-01-31)` 
 5. Now, let's check that everything is working with a command that tests our ability to save code to Github. Go to VSCode and make sure we have the cs50-workspace folder open, and the robot icon in bottom left shows our profile is enabled. Then open VSCode's terminal and run these commands: 
 
 ```terminal
-git commit -am “first commit!”
+git commit -am "first commit!"
 ```
 
 ```terminal
