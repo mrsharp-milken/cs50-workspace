@@ -37,10 +37,20 @@ Use this repository to work on your projects locally! Developing locally lets us
     * **Make sure the repository is Private**
     * (the other settings don't matter)
     * When finished, copy the link to your new repo
+
+<br/>
+
+<br/>
+
 7. Now you'll finish setting up the profile. 
     * Go back to VSCode, and choose the CS50 profile by clicking on the gear icon in the bottom left. 
     * Click "Profiles" >> "cs50 student". If you don't see it, you might have to wait a bit longer for the profile to finish installing. 
     * You'll know you're correctly using the profile when the icon at the bottom of the left sidebar changes from a gear to a little robot head.
+
+<br/>
+
+<br/>
+
 8. Next, you'll download the starter files from your github repo.
     * Find the file explorer icon on the top of the left sidebar and click it. 
     * Click the blue "Clone Repository" button. 
@@ -48,6 +58,11 @@ Use this repository to work on your projects locally! Developing locally lets us
     * Choose a location you'll remember, like your user folder, Documents, or Desktop. 
     * This step will download the files in the github repository, and put them in a folder called "cs50-workspace".
     * You'll know this worked when you can see some files show up on the left like `python-test` and `README.md`
+
+<br/>
+
+<br/>
+
 9. Test if you can run your code!
     * Open terminal by clicking (on the menu bar on top of your screen) Terminal >> New Terminal
     * Use `cd python-test` to move into the python-test folder
@@ -59,6 +74,10 @@ Use this repository to work on your projects locally! Developing locally lets us
 
 > [!NOTE]  
 > The `cd` command is the terminal command to enter a folder! You can use `cd ..` to "back out" of a folder. If you type `cd` without other options, instead of going to the "project home" folder, you'll go to the "user" folder of your computer, which might make you feel lost. If your terminal gets lost in the wrong folder, you can always close and reopen the VSCode terminal, and it'll put you back in your project home.
+
+<br/>
+
+<br/>
 
 ## Autosaving Code to GitHub
 
