@@ -11,8 +11,16 @@ Use this repository to work on your projects locally! Developing locally lets us
         * **NOTE:** If you get "macOS can't ensure the security of this program" you have to to go to your system settings / system preferences >> Security and Privacy >> (Scroll down) ... Open Anyway. Then follow the prompts to finish opening and installing.
     * [Github CLI](https://github.com/cli/cli/releases/download/v2.62.0/gh_2.62.0_macOS_universal.pkg) - Github  CLI is what lets you save, submit, and check your code using the command line, you need it to use submit50 and check50. You might also get an "unknown developer" warning here, follow the same steps as above.
 3. Before moving on, make sure you've installed everything, not just downloaded it. Every file you just downloaded is an installer, and many of the steps below won't work until you run the installers.
-4. Download the CS50 VSCode Profile [with this link](https://drive.google.com/uc?export=download&id=19O9L1eGiU19j441sVVzeuvSFwhzLx5Po) - this will help us install and setup all of the important extensions and settings for you after we import it.
+4. Download the CS50 VSCode Profile [clicking the download button at this link](https://github.com/mrsharp-milken/cs50-workspace/blob/main/cs50student.code-profile) - this will help us install and setup all of the important extensions and settings for you after we import it.
+<img width="1190" height="344" alt="Screenshot 2025-09-07 at 8 03 34 PM" src="https://github.com/user-attachments/assets/1029b7dd-05bd-4ea1-b280-e61c74c7fcc3" />
+
 5. Open VSCode, then click the gear icon at the bottom of the left sidebar. Click "Profiles" >> Blue Arrow dropdown next to "New Profile" >> "Import Profile" >> "Select File" and choose the file you just downloaded, with the name `cs50.code-profile`. If it worked, you should see a small loading indicator on the bottom of your VSCode window.
+<img width="668" height="179" alt="image" src="https://github.com/user-attachments/assets/da9b7e36-fcf6-4b5c-aec4-0f511d0798b2" />
+
+<br/>
+
+<br/>
+
 6. While things are installing, you can come back here to Github and create your own copy of this repository. Click the green "Use as Template" button in the upper right of this page.
     * Click the green "Use as Template" button in the upper right of this page
     * Use `cs50-workspace` as the repository name
