@@ -9,8 +9,18 @@ Use this repository to work on your projects locally! Developing locally lets us
     * [git for Mac](https://sourceforge.net/projects/git-osx-installer/) or [git for Windows](https://git-scm.com/downloads/win) - git is the program that saves and your work, it's a lot like google drive but for programmers. 
         * **NOTE:** If you get an "unknown developer" warning when you try to open the installer package, try going to Finder, right clicking the installer package, then clicking Open from that menu. This should give you the option to open and complete the install.
         * **NOTE:** If you get "macOS can't ensure the security of this program" you have to to go to your system settings / system preferences >> Security and Privacy >> (Scroll down) ... Open Anyway. Then follow the prompts to finish opening and installing.
-    * [Github CLI for Mac](https://github.com/cli/cli/releases/download/v2.62.0/gh_2.62.0_macOS_universal.pkg) or [Github CLI for Windows](https://github.com/cli/cli/releases/tag/v2.78.0#Contributors:~:text=ankddev-,Assets,-24) - Github  CLI is what lets you save, submit, and check your code using the command line, you need it to use submit50 and check50. You might also get an "unknown developer" warning here, follow the same steps as above.
-3. Before moving on, make sure you've installed everything, not just downloaded it. Every file you just downloaded is an installer, and many of the steps below won't work until you run the installers.
+    * [Github CLI for Mac](https://github.com/cli/cli/releases/download/v2.62.0/gh_2.62.0_macOS_universal.pkg) or [Github CLI for Windows](https://github.com/cli/cli/releases/tag/v2.78.0#Contributors:~:text=ankddev-,Assets,-24) - Github  CLI is what lets you save, submit, and check your code using the command line, you need it to use submit50 and check50. You might also get an "unknown developer" warning here on Mac, follow the same steps as above.
+
+<br/>
+
+<br/>
+
+3. **Before moving on, make sure you've installed everything, not just downloaded it!** Every file you just downloaded is an installer, and many of the steps below won't work until you run the installers.
+
+<br/>
+
+<br/>
+
 4. Download the CS50 VSCode Profile [clicking the download button at this link](https://github.com/mrsharp-milken/cs50-workspace/blob/main/cs50student.code-profile) - this will help us install and setup all of the important extensions and settings for you after we import it.
 <img width="1190" height="344" alt="Screenshot 2025-09-07 at 8 03 34 PM" src="https://github.com/user-attachments/assets/1029b7dd-05bd-4ea1-b280-e61c74c7fcc3" />
 
