@@ -3,7 +3,7 @@
 Use this repository to work on your projects locally! Developing locally lets us use cool stuff like graphics libraries for data visualization.
 
 1. **Tip:** These steps involves a lot of switching between different windows and things popping up. Fullscreening windows makes managing multiple windows much harder and hides these popups. I strongly recommend not fullscreening anything as you go through this process. 
-2. With that, download and install these four programs:
+2. With that, download **and install** these four programs:
     * [VSCode](https://code.visualstudio.com/download) - This is the code editor!
     * [Python for Mac](https://www.python.org/downloads/macos/) or [Python for Windows](https://www.python.org/downloads/windows/) - The python "interpreter" that lets us run python programs. Choose the "latest Python 3 Release" link at the top of the page.
     * [git for Mac](https://sourceforge.net/projects/git-osx-installer/) or [git for Windows](https://git-scm.com/downloads/win) - git is the program that saves and your work, it's a lot like google drive but for programmers. 
