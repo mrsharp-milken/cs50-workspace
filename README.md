@@ -136,7 +136,7 @@ curl -O https://github.com/mrsharp-milken/python-samples/raw/refs/heads/main/pia
 
 2. Next, download a bit of code to play the file:
 ```bash
-curl -O https://github.com/mrsharp-milken/python-samples/blob/main/audio-test.py
+curl -O https://github.com/mrsharp-milken/python-samples/raw/refs/heads/main/audio-test.py
 ```
 
 3. Run the program. What does it do?
