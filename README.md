@@ -50,7 +50,7 @@ Use this repository to work on your projects locally! Developing locally lets us
 
 7. Now you'll finish setting up the profile. 
     * Go back to VSCode, and choose the CS50 profile by clicking on the gear icon in the bottom left. 
-    * Click "Profiles" >> "cs50 student". If you don't see it, you might have to wait a bit longer for the profile to finish installing. 
+    * Click "Profiles" >> "cs50 student" >> "✔️". If you don't see it, you might have to wait a bit longer for the profile to finish installing. 
     * You'll know you're correctly using the profile when the icon at the bottom of the left sidebar changes from a gear to a little robot head.
 
 <br/>
@@ -106,6 +106,14 @@ _You're good if you see a version number, like `gh version 2.43.1 (2024-01-31)` 
 5. Now, let's check that everything is working with a command that tests our ability to save code to Github. Go to VSCode and make sure we have the cs50-workspace folder open, and the robot icon in bottom left shows our profile is enabled. Then open VSCode's terminal and run these commands: 
 
 ```terminal
+git config --global user.name "$(gh api user --jq '.login')"
+```
+
+```terminal
+git config --global user.email "$(gh api user --jq '"\(.id)+\(.login)@users.noreply.github.com"')"
+```
+
+```terminal
 git commit -am "first commit"
 ```
 
@@ -128,11 +136,13 @@ curl -O https://raw.githubusercontent.com/mrsharp-milken/python-samples/refs/hea
 
 3. Run the program. What does it do? Look around!
 
-4. This program uses python's default graphics library, called **tkinter**. We'll be using it for the next project. For now, use google to help you add code to draw a rectangle or circle using the **tkinter** library.
+4. This program uses python's default graphics library, called **tkinter**. We'll be using it for the some projects in the future.
+
+5. For now, use google to help you add code to draw a rectangle or circle using the **tkinter** library.
 
 ## Submitting
 
-Once you've completed Step 4 above, **take a screenshot that shows the graphics and the code you added, then submit it on Blackbaud.**
+Once you've completed Step 5 above, **take a screenshot that shows the graphics and the code you added, then submit it on Blackbaud.**
 
 For some assignments, we'll submit using the `submit50` tool via the command line. It's worth installing `submit50` and `check50` now so you don't have to do it last minute later:
 
