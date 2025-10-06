@@ -6,10 +6,10 @@ Use this repository to work on your projects locally! Developing locally lets us
 2. With that, download **and install** these four programs:
     * [VSCode](https://code.visualstudio.com/download) - This is the code editor!
     * [Python for Mac](https://www.python.org/downloads/macos/) or [Python for Windows](https://www.python.org/downloads/windows/) - The python "interpreter" that lets us run python programs. Choose the "latest Python 3 Release" link at the top of the page.
-    * [git for Mac](https://sourceforge.net/projects/git-osx-installer/) or [git for Windows](https://git-scm.com/downloads/win) - git is the program that saves and your work, it's a lot like google drive but for programmers. 
+    * [git for Mac](https://sourceforge.net/projects/git-osx-installer/) or [git for Windows](https://git-scm.com/downloads/win) - git is the program that saves your work, it's a lot like google drive but for programmers. 
         * **NOTE:** If you get an "unknown developer" warning when you try to open the installer package, try going to Finder, right clicking the installer package, then clicking Open from that menu. This should give you the option to open and complete the install.
         * **NOTE:** If you get "macOS can't ensure the security of this program" you have to to go to your system settings / system preferences >> Security and Privacy >> (Scroll down) ... Open Anyway. Then follow the prompts to finish opening and installing.
-    * [Github CLI for Mac](https://github.com/cli/cli/releases/download/v2.62.0/gh_2.62.0_macOS_universal.pkg) or [Github CLI for Windows](https://github.com/cli/cli/releases/tag/v2.78.0#Contributors:~:text=ankddev-,Assets,-24) - Github  CLI is what lets you save, submit, and check your code using the command line, you need it to use submit50 and check50. You might also get an "unknown developer" warning here on Mac, follow the same steps as above.
+    * [Github CLI for Mac](https://github.com/cli/cli/releases/download/v2.62.0/gh_2.62.0_macOS_universal.pkg) or [Github CLI for Windows](https://github.com/cli/cli/releases/tag/v2.78.0#Contributors:~:text=ankddev-,Assets,-24) - Github CLI is what lets you save, submit, and check your code using the command line, you need it to use submit50 and check50. You might also get an "unknown developer" warning here on Mac, follow the same steps as above.
 
 <br/>
 
