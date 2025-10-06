@@ -131,7 +131,7 @@ _If you see an error message, screenshot it to show to Mr. Sharp._
 
 1. First, download the audio file. Open VSCode, open a new Terminal, and run this command:
 ```bash
-curl -O https://github.com/mrsharp-milken/python-samples/raw/refs/heads/main/piano-minuet.wav
+curl -L -O https://raw.githubusercontent.com/mrsharp-milken/python-samples/main/piano-minuet.wav
 ```
 
 2. Next, download a bit of code to play the file:
