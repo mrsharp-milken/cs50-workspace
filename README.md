@@ -72,7 +72,7 @@ Use this repository to work on your projects locally! Developing locally lets us
 9. Test if you can run your code!
     * Open terminal by clicking (on the menu bar on top of your screen) Terminal >> New Terminal
     * Use `cd python-test` to move into the python-test folder
-    * Then `python3 hello-world.py` to run the python file. 
+    * Then `python3 hello-world.py` to run the python file. On Windows, it might be `python hello-world.py`
 
 ### It should look like this when you're done:
 
@@ -121,34 +121,75 @@ git commit -am "first commit"
 git push
 ```
 
-
 _If you see an error message, screenshot it to show to Mr. Sharp._
 
-## Python Graphics
+<br/>
 
-1. Test graphics with a basic command: `python3 -m tkinter`. It should give you a little window like this:
-<img width="178" alt="image" src="https://github.com/user-attachments/assets/2e95bb2b-aacb-41fd-8dd1-2a8b07bf1518" />
+<br/>
 
-2. Next, try a more substantial graphics program. Run this command to download the program:
+## Python Audio
+
+1. First, download the audio file. Open VSCode, open a new Terminal, and run this command:
 ```bash
-curl -O https://raw.githubusercontent.com/mrsharp-milken/python-samples/refs/heads/main/simple-text-graphics.py
+curl -O https://github.com/mrsharp-milken/python-samples/raw/refs/heads/main/piano-minuet.wav
 ```
 
-3. Run the program. What does it do? Look around!
+2. Next, download a bit of code to play the file:
+```bash
+curl -O https://github.com/mrsharp-milken/python-samples/blob/main/audio-test.py
+```
 
-4. This program uses python's default graphics library, called **tkinter**. We'll be using it for the some projects in the future.
+3. Run the program. What does it do?
 
-5. For now, use google to help you add code to draw a rectangle or circle using the **tkinter** library.
+On MacOS:
+```bash
+python3 _______.py
+```
+
+On Windows:
+```bash
+python ______.py
+```
+
+4. An error message! We need to install the **playsound** package first.
+
+On MacOS:
+```bash
+pip3 install playsound==1.2.2 PyObjC
+```
+
+On Windows:
+```bash
+pip install playsound
+```
+
+4. Now if you run the program again, you won't get the error, but we're still not playing the sound.
+
+5. **ON YOUR OWN! Figure out how to use the playsound package to play the audio file.** [Check the documentation for a bit more info](https://pypi.org/project/playsound/).
+
+<br/>
+
+<br/>
 
 ## Submitting
 
-Once you've completed Step 5 above, **take a screenshot that shows the graphics and the code you added, then submit it on Blackbaud.**
+Once you've completed Step 5 above, **take a screenshot of your working code, then submit it on Blackbaud.**
 
 For some assignments, we'll submit using the `submit50` tool via the command line. It's worth installing `submit50` and `check50` now so you don't have to do it last minute later:
 
+MacOS
 ```bash
 pip3 install submit50 check50
 ```
+
+Windows
+```bash
+pip install submit50 check50
+```
+
+<br/>
+
+<br/>
 
 ## Notes
 
