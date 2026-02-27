@@ -30,7 +30,7 @@ Use this repository to work on your projects locally! Developing locally lets us
 5. Download the CS50 VSCodium Profile [clicking the download button at this link](https://github.com/mrsharp-milken/cs50-workspace/blob/main/cs50student.code-profile) - this will help us install and setup all of the important extensions and settings for you after we import it.
 <img width="1190" height="344" alt="Screenshot 2025-09-07 at 8 03 34 PM" src="https://github.com/user-attachments/assets/1029b7dd-05bd-4ea1-b280-e61c74c7fcc3" />
 
-6. Open VSCodium (this is an app you just downloaded), then click the gear icon at the bottom of the left sidebar. Click "Profiles" >> Blue Arrow dropdown next to "New Profile" >> "Import Profile" >> "Select File" and choose the file you just downloaded, with the name `cs50.code-profile`. If it worked, you should see a small loading indicator on the bottom of your VSCodium window.
+6. Open VSCodium (this is an app you just downloaded), then click the gear icon at the bottom of the left sidebar. Click "Profiles" >> Blue Arrow dropdown next to "New Profile" >> "Import Profile" >> "Select File" and choose the file you just downloaded, with the name `cs50student.code-profile`. If it worked, you should see a small loading indicator on the bottom of your VSCodium window.
 <img width="668" height="179" alt="image" src="https://github.com/user-attachments/assets/da9b7e36-fcf6-4b5c-aec4-0f511d0798b2" />
 
 <br/>
