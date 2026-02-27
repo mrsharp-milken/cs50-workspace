@@ -195,9 +195,5 @@ pip install submit50 check50
 
 <br/>
 
-## Notes
-
-Check out this link to [Mr. Sharp's code reference document](https://github.com/mrsharp-milken/AP-CS-Principles/blob/main/README.md), with terminal commands, code samples, and debugging strategies.
-
-Write your own notes / things you want to remember here!
+## Done!
 
