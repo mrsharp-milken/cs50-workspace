@@ -114,7 +114,11 @@ git config --global user.email "$(gh api user --jq '"\(.id)+\(.login)@users.nore
 ```
 
 ```terminal
-git commit -am "first commit"
+git add .
+```
+
+```terminal
+git commit -m "first commit"
 ```
 
 ```terminal
