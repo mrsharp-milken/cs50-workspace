@@ -1,21 +1,49 @@
-# CS50 Workspace!
+# CS50 Workspace! (macOS)
 
 Use this repository to work on your projects locally! Developing locally lets us use cool stuff like graphics libraries for data visualization.
 
-1. **Tip:** These steps involves a lot of switching between different windows and things popping up. Fullscreening windows makes managing multiple windows much harder and hides these popups. I strongly recommend not fullscreening anything as you go through this process. 
-2. With that, download **and install** these four programs:
-    * [VSCodium](https://vscodium.com/#install) - This is the code editor!
-    * [Python for Mac](https://www.python.org/downloads/macos/) or [Python for Windows](https://www.python.org/downloads/windows/) - The python "interpreter" that lets us run python programs. Choose the "latest Python 3 Release" link at the top of the page.
-    * [git for Mac](https://sourceforge.net/projects/git-osx-installer/) or [git for Windows](https://git-scm.com/downloads/win) - git is the program that saves your work, it's a lot like google drive but for programmers. 
-        * **NOTE:** If you get an "unknown developer" warning when you try to open the installer package, try going to Finder, right clicking the installer package, then clicking Open from that menu. This should give you the option to open and complete the install.
-        * **NOTE:** If you get "macOS can't ensure the security of this program" you have to to go to your system settings / system preferences >> Security and Privacy >> (Scroll down) ... Open Anyway. Then follow the prompts to finish opening and installing.
-    * [Github CLI for Mac](https://github.com/cli/cli/releases/download/v2.62.0/gh_2.62.0_macOS_universal.pkg) or [Github CLI for Windows](https://github.com/cli/cli/releases/tag/v2.78.0#Contributors:~:text=ankddev-,Assets,-24) - Github CLI is what lets you save, submit, and check your code using the command line, you need it to use submit50 and check50. You might also get an "unknown developer" warning here on Mac, follow the same steps as above.
+1. **Tip:** These steps involve a lot of switching between windows and things popping up. Fullscreening windows makes managing multiple windows much harder and hides these popups. I strongly recommend not fullscreening anything as you go through this process.
 
-<br/>
+2. **Install Python 3.13 first, from python.org (not Homebrew).**
+   * Download the installer directly: **[Python 3.13.15 macOS installer](https://www.python.org/ftp/python/3.13.15/python-3.13.15-macos11.pkg)**
+   * **NOTE:** If you get an "unknown developer" warning when you try to open the installer, go to Finder, right-click the installer, then click Open from that menu. This should give you the option to open and complete the install.
+   * **NOTE:** If you get "macOS can't ensure the security of this program," go to System Settings/Preferences → Security and Privacy → (scroll down) → Open Anyway, then follow the prompts.
+   * Verify it worked by opening **Terminal** (Cmd+Space, type "Terminal", Enter) and running:
+     ```
+     python3 --version
+     python3 -m tkinter
+     ```
+     The first command should print something starting with `Python 3.13.`. The second should pop open a small test window with buttons — if that appears, `tkinter` is working. Close it when done.
 
-<br/>
+3. **Mac: Install Homebrew.** Homebrew is a "package manager" — instead of hunting down installer files on the web, it lets you install everything else with one-line commands.
+   * In Terminal, paste this and press Enter:
+     ```
+     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+     ```
+   * Follow the prompts — it may ask for your Mac password (typing won't show characters, that's normal) and may ask you to press Enter to confirm.
+   * **Important:** at the end, the installer prints 1–2 "Next steps" commands to add Homebrew to your PATH (something like `echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile` followed by `eval "$(/opt/homebrew/bin/brew shellenv)"`). Copy and run exactly what it shows — skipping this means the `brew` command won't work in new terminal windows.
+   * Verify it worked (in Terminal):
+     ```
+     brew --version
+     ```
 
-3. **Before moving on, make sure you've installed everything, not just downloaded it!** Every file you just downloaded is an installer, and many of the steps below won't work until you run the installers.
+4. **Install the rest with Homebrew:**
+   ```
+   brew install --cask vscodium
+   brew install git
+   brew install gh
+   ```
+   * `vscodium` — the code editor.
+   * `git` — saves your work, like Google Drive but for programmers.
+   * `gh` — the GitHub CLI, needed for `submit50` and `check50`.
+
+   Verify:
+   ```
+   git --version
+   gh --version
+   ```
+
+
 
 <br/>
 
