@@ -233,7 +233,14 @@ Go back to VSCodium
 Test if you can run your code!
 * Open terminal by clicking (on the menu bar on top of your screen) Terminal >> New Terminal
 * Use `cd python-test` to move into the python-test folder
+```terminal
+cd python-test
+```
+
 * Then `python3 hello-world.py` to run the python file.
+```terminal
+python3 hello-world.py
+```
 
 **It should look like this when you're done:**
 <img width="1440" alt="Screenshot 2024-12-12 at 12 56 02 PM" src="https://github.com/user-attachments/assets/ea6f7b53-4f53-4160-be76-051c4e35b00e" />
