@@ -11,6 +11,8 @@ Use this repository to work on your projects locally! Developing locally lets us
    * Verify it worked by opening **Terminal** (Cmd+Space, type "Terminal", Enter) and running:
      ```
      python3 --version
+     ```
+     ```
      python3 -m tkinter
      ```
      The first command should print something starting with `Python 3.13.`. The second should pop open a small test window with buttons — if that appears, `tkinter` is working. Close it when done.
@@ -30,7 +32,11 @@ Use this repository to work on your projects locally! Developing locally lets us
 4. **Install the rest with Homebrew:**
    ```
    brew install --cask vscodium
+   ```
+   ```
    brew install git
+   ```
+   ```
    brew install gh
    ```
    * `vscodium` — the code editor.
@@ -40,6 +46,8 @@ Use this repository to work on your projects locally! Developing locally lets us
    Verify:
    ```
    git --version
+   ```
+   ```
    gh --version
    ```
 
@@ -49,23 +57,23 @@ Use this repository to work on your projects locally! Developing locally lets us
 
 <br/>
 
-4. [Sign up for a Github Account](https://github.com/signup) using your personal email! (you'll want access to it after you graduate)
+5. [Sign up for a Github Account](https://github.com/signup) using your personal email! (you'll want access to it after you graduate)
 
 <br/>
 
 <br/>
 
-5. Download the `mrsharp-student` VSCodium Profile [clicking the download button at this link](https://github.com/mrsharp-milken/cs50-workspace/blob/main/mrsharp-student.code-profile) - this will help us install and setup all of the important extensions and settings for you after we import it.
+6. Download the `mrsharp-student` VSCodium Profile [clicking the download button at this link](https://github.com/mrsharp-milken/cs50-workspace/blob/main/mrsharp-student.code-profile) - this will help us install and setup all of the important extensions and settings for you after we import it.
 <img width="1190" height="344" alt="Screenshot 2025-09-07 at 8 03 34 PM" src="https://github.com/user-attachments/assets/1029b7dd-05bd-4ea1-b280-e61c74c7fcc3" />
 
-6. Open VSCodium (this is an app you just downloaded), then click the gear icon at the bottom of the left sidebar. Click "Profiles" >> Blue Arrow dropdown next to "New Profile" >> "Import Profile" >> "Select File" and choose the file you just downloaded, with the name `mrsharp-student.code-profile`. If it worked, you should see a small loading indicator on the bottom of your VSCodium window.
+7. Import the profile and its settings! Open VSCodium (this is an app you just downloaded), then click the gear icon at the bottom of the left sidebar. Click "Profiles" >> Blue Arrow dropdown next to "New Profile" >> "Import Profile" >> "Select File" and choose the file you just downloaded, with the name `mrsharp-student.code-profile`. If it worked, you should see a small loading indicator on the bottom of your VSCodium window.
 <img width="668" height="179" alt="image" src="https://github.com/user-attachments/assets/da9b7e36-fcf6-4b5c-aec4-0f511d0798b2" />
 
 <br/>
 
 <br/>
 
-6. While things are installing, you can come back here to Github and create your own copy of this repository. Click the green "Use as Template" button in the upper right of [this page](https://github.com/mrsharp-milken/cs50-workspace/tree/no-prior-cs50).
+8. While things are installing, you can come back here to Github and create your own copy of this repository. Click the green "Use as Template" button in the upper right of [this page](https://github.com/mrsharp-milken/cs50-workspace/tree/no-prior-cs50).
     * Click the green "Use as Template" button in the upper right of this page
     * Use `cs50-workspace` as the repository name
     * **Make sure the repository is Private**
@@ -76,7 +84,7 @@ Use this repository to work on your projects locally! Developing locally lets us
 
 <br/>
 
-7. Now you'll finish setting up the profile. 
+9. Now you'll finish setting up the profile. 
     * Go back to VSCodium, and choose the `mrsharp student` profile by clicking on the gear icon in the bottom left. 
     * Click "Profiles" >> "mrsharp student" >> "✔️". If you don't see it, you might have to wait a bit longer for the profile to finish installing. 
     * You'll know you're correctly using the profile when the icon at the bottom of the left sidebar changes from a gear to a little robot head.
@@ -85,7 +93,7 @@ Use this repository to work on your projects locally! Developing locally lets us
 
 <br/>
 
-8. Next, you'll download the starter files from your github repo.
+10. Next, you'll download the starter files from your github repo.
     * Find the file explorer icon on the top of the left sidebar and click it. 
     * Click the blue "Clone Repository" button. 
     * Paste the link to you github repository you copied earlier here. (The link should look like `https://github.com/YOUR_USERNAME/cs50-workspace` but with your username instead of `YOUR_USERNAME`). 
@@ -97,7 +105,7 @@ Use this repository to work on your projects locally! Developing locally lets us
 
 <br/>
 
-9. Test if you can run your code!
+11. Test if you can run your code!
     * Open terminal by clicking (on the menu bar on top of your screen) Terminal >> New Terminal
     * Use `cd python-test` to move into the python-test folder
     * Then `python3 hello-world.py` to run the python file. On Windows, it might be `python hello-world.py`
