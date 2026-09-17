@@ -130,6 +130,9 @@ def check_repo(login):
             warn("GitDoc autosave commits not detected yet", "edit a file and wait ~20 seconds, then re-run this script")
 
 
+STUDENT_PROFILES = ["mrsharp-student", "cs50 student"]
+
+
 def check_extensions():
     print("\nVSCodium extensions")
     codium = shutil.which("codium")
@@ -146,6 +149,15 @@ def check_extensions():
         return
 
     installed = set(output.splitlines())
+
+    # Extensions imported via a .code-profile land in an isolated profile, not
+    # the Default one, and are only active in the GUI once that workspace is
+    # opened — so also check the profile(s) students may have imported.
+    for profile in STUDENT_PROFILES:
+        code, output, _ = run([codium, "--list-extensions", "--profile", profile])
+        if code == 0:
+            installed |= set(output.splitlines())
+
     for ext_id, label in REQUIRED_EXTENSIONS.items():
         if ext_id in installed:
             ok(label)
