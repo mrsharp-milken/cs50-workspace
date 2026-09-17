@@ -159,6 +159,32 @@ _If you see an error message, screenshot it to show to Mr. Sharp._
 
 <br/>
 
+## Optional: Verify Your Setup
+
+Want to double check everything above actually worked? Open VSCodium's terminal in the `cs50-workspace` folder and run:
+
+```terminal
+python3 check-setup.py
+```
+
+This checks Python/tkinter, git, GitHub CLI login, your git remote, recent commits, and installed extensions, and tells you exactly what to fix if something's missing.
+
+<br/>
+
+<br/>
+
+## Optional: See Change Stats in Your Autosave Commits
+
+By default, each GitDoc autosave commit is just labeled with a timestamp. If you'd like each one to also show how many lines changed (handy for seeing which commit was a big paste vs. normal typing), run this once:
+
+```terminal
+python3 setup-hooks.py
+```
+
+<br/>
+
+<br/>
+
 ## Done!
 
 Whew!

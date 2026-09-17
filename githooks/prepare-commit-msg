@@ -1,0 +1,22 @@
+#!/bin/sh
+# Appends insertion/deletion stats to GitDoc's auto-generated commit messages,
+# so `git log` shows how much changed in each autosave, e.g.:
+#   Tue, Sep 9, 2025, 3:13 PM -07:00
+#
+#   1 file changed, 10 insertions(+), 18 deletions(-)
+
+COMMIT_MSG_FILE="$1"
+COMMIT_SOURCE="$2"
+
+case "$COMMIT_SOURCE" in
+  merge|squash) exit 0 ;;
+esac
+
+if grep -Eq 'insertion|deletion' "$COMMIT_MSG_FILE" 2>/dev/null; then
+  exit 0
+fi
+
+STATS=$(git diff --cached --shortstat)
+if [ -n "$STATS" ]; then
+  printf '\n%s\n' "$STATS" >> "$COMMIT_MSG_FILE"
+fi
