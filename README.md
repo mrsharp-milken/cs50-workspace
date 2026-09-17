@@ -43,13 +43,6 @@ Use this repository to work on your projects locally! Developing locally lets us
    * `git` — saves your work, like Google Drive but for programmers.
    * `gh` — the GitHub CLI, needed for `submit50` and `check50`.
 
-   Verify:
-   ```
-   git --version
-   ```
-   ```
-   gh --version
-   ```
 
 
 
