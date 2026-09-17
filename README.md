@@ -113,35 +113,57 @@ https://raw.githubusercontent.com/mrsharp-milken/cs50-workspace/main/mrsharp-stu
 
 Import the profile and its settings! Open VSCodium (this is an app you just downloaded), then:
 * Click the gear icon at the bottom of the left sidebar.
+<img height="91" alt="Screenshot 2026-09-17 at 11 30 58 AM" src="https://github.com/user-attachments/assets/97f5cfa3-caa2-4310-a8a8-d0016bff04e2" />
+
 * Click "Profiles" >> Blue Arrow dropdown next to "New Profile" >> "Import Profile".
-<img width="668" height="179" alt="image" src="https://github.com/user-attachments/assets/da9b7e36-fcf6-4b5c-aec4-0f511d0798b2" />
+<img height="179" alt="image" src="https://github.com/user-attachments/assets/da9b7e36-fcf6-4b5c-aec4-0f511d0798b2" />
+
 * A text box will appear at the top of the window - paste the URL you just copied and press Enter.
-* You should see a small loading indicator on the bottom of your VSCodium window, followed by a preview of what's being imported.
-* Click "Import" to confirm.
+<img height="124" alt="Screenshot 2026-09-17 at 11 27 16 AM" src="https://github.com/user-attachments/assets/267bf267-26a4-45fd-bdc5-e6bb94b4275f" />
+
+* Click "Create" to confirm.
+<img height="151" alt="Screenshot 2026-09-17 at 11 28 26 AM" src="https://github.com/user-attachments/assets/d7a068f5-13d6-4136-9d9e-54a1dbca7346" />
+
+<br/>
 
 ### C - Select the Profile
 
 Now switch to the profile you just imported.
 * Click on the gear icon in the bottom left, then "Profiles" >> "mrsharp-student" >> "✔️".
-* You'll know you're correctly using the profile when the icon at the bottom of the left sidebar changes from a gear to a little robot head.
+<img height="136" alt="Screenshot 2026-09-17 at 11 29 09 AM" src="https://github.com/user-attachments/assets/ac00177e-8c8d-4104-885b-409c1972ceaa" />
+
+* You'll know you've selected the profile when the icon at the bottom of the left sidebar changes from a gear to a little robot head.
+<img height="330" alt="Screenshot 2026-09-17 at 11 29 46 AM" src="https://github.com/user-attachments/assets/18ea297c-eb0c-4694-906d-3fb2fcfdebdf" />
+
+<br/>
 
 ### D - Create Your Own Copy of the Repo
 
-Come back here to GitHub and create your own copy of this repository. Click the green "Use as Template" button in the upper right of [this page](https://github.com/mrsharp-milken/cs50-workspace/tree/main).
-* Use `cs50-workspace` as the repository name
+Come back here to GitHub and create your own copy of this repository. 
+* Copy this name, you'll need it later: `cs50-workspace`
+* Scroll up and click the green "Use as Template" button in the upper right of [this page](https://github.com/mrsharp-milken/cs50-workspace/tree/main).
+* Paste `cs50-workspace` as the repository name (name must be exact!)
 * **Make sure the repository is Private**
 * (the other settings don't matter)
+
+<br/>
 
 ### E - Clone Your Repo
 
 Now you'll download the starter files from your GitHub repo using the terminal.
 * Open a terminal in VSCodium: Terminal >> New Terminal (top menu bar).
-* Clone your repo:
+<img height="87" alt="image" src="https://github.com/user-attachments/assets/a5f43ddf-8225-4874-9808-e14918974ca6" />
+
+* Clone your repo ("clone" means "download a copy to my computer") with this command:
   ```
   gh repo clone $(gh api user --jq .login)/cs50-workspace
   ```
   This downloads the files into a new folder called `cs50-workspace`.
+<img height="88" alt="image" src="https://github.com/user-attachments/assets/c588975d-f1a2-4855-a2b6-201fc111946a" />
+
 * Open that folder in VSCodium: File >> Open Folder... and select the `cs50-workspace` folder you just cloned.
+<img height="120" alt="Screenshot 2026-09-17 at 11 45 15 AM" src="https://github.com/user-attachments/assets/358efd61-94f3-4f54-a55a-2e07e1e7841c" />
+
 * You'll know this worked when you can see some files show up on the left like `python-test` and `README.md`
 
 <br/>
