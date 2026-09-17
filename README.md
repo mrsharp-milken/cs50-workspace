@@ -50,11 +50,11 @@ _If not, go back and make sure you ran the 2-3 commands that printed when homebr
   ```
   brew install --cask vscodium
   ```
-* `git` — saves your work, like Google Drive but for programmers.
+* `git` — saves, tracks, and manages code.
   ```
   brew install git
   ```
-* `gh` — the GitHub CLI, needed for `submit50` and `check50`.
+* `gh` — the GitHub CLI, needed to sync your work to the cloud
   ```
   brew install gh
   ```
@@ -116,16 +116,36 @@ https://raw.githubusercontent.com/mrsharp-milken/cs50-workspace/main/mrsharp-stu
 
 Import the profile and its settings! Open VSCodium (this is an app you just downloaded), then:
 * Click the gear icon at the bottom of the left sidebar.
+<details>
+<summary>Show screenshot</summary>
+
 <img height="91" alt="Screenshot 2026-09-17 at 11 30 58 AM" src="https://github.com/user-attachments/assets/97f5cfa3-caa2-4310-a8a8-d0016bff04e2" />
 
+</details>
+
 * Click "Profiles" >> Blue Arrow dropdown next to "New Profile" >> "Import Profile".
+<details>
+<summary>Show screenshot</summary>
+
 <img height="179" alt="image" src="https://github.com/user-attachments/assets/da9b7e36-fcf6-4b5c-aec4-0f511d0798b2" />
 
+</details>
+
 * A text box will appear at the top of the window - paste the URL you just copied and press Enter.
+<details>
+<summary>Show screenshot</summary>
+
 <img height="124" alt="Screenshot 2026-09-17 at 11 27 16 AM" src="https://github.com/user-attachments/assets/267bf267-26a4-45fd-bdc5-e6bb94b4275f" />
 
+</details>
+
 * Click "Create" to confirm.
+<details>
+<summary>Show screenshot</summary>
+
 <img height="151" alt="Screenshot 2026-09-17 at 11 28 26 AM" src="https://github.com/user-attachments/assets/d7a068f5-13d6-4136-9d9e-54a1dbca7346" />
+
+</details>
 
 <br/>
 
@@ -133,7 +153,12 @@ Import the profile and its settings! Open VSCodium (this is an app you just down
 
 Now switch to the profile you just imported.
 * Click on the gear icon in the bottom left, then "Profiles" >> "mrsharp-student" >> "✔️".
+<details>
+<summary>Show screenshot</summary>
+
 <img height="136" alt="Screenshot 2026-09-17 at 11 29 09 AM" src="https://github.com/user-attachments/assets/ac00177e-8c8d-4104-885b-409c1972ceaa" />
+
+</details>
 
 * You'll know you've selected the profile when the icon at the bottom of the left sidebar changes from a gear to a little robot head.
 <img height="330" alt="Screenshot 2026-09-17 at 11 29 46 AM" src="https://github.com/user-attachments/assets/18ea297c-eb0c-4694-906d-3fb2fcfdebdf" />
@@ -149,14 +174,17 @@ cs50-workspace
 ```
 
 * Scroll up and click the green "Use as Template" button in the upper right of [this page](https://github.com/mrsharp-milken/cs50-workspace/tree/main).
+<details>
+<summary>Show screenshot</summary>
+
 <img height="352" alt="Screenshot 2026-09-17 at 11 50 55 AM" src="https://github.com/user-attachments/assets/1e283dae-057f-4f10-b277-9119358e613b" />
+
+</details>
 
 * Paste `cs50-workspace` as the repository name (name must be exact!)
 * **Make sure the repository is Private**
 * (the other settings don't matter)
 <img height="352" alt="Screenshot 2026-09-17 at 11 51 39 AM" src="https://github.com/user-attachments/assets/21183a32-7c4f-46da-bb86-b77af68b643f" />
-
-
 
 <br/>
 
@@ -165,17 +193,32 @@ cs50-workspace
 Go back to VSCodium
 
 * Open a terminal in VSCodium: Terminal >> New Terminal (top menu bar).
+<details>
+<summary>Show screenshot</summary>
+
 <img height="87" alt="image" src="https://github.com/user-attachments/assets/a5f43ddf-8225-4874-9808-e14918974ca6" />
+
+</details>
 
 * Clone your repo ("clone" means "download a copy to my computer") with this command:
   ```
   gh repo clone $(gh api user --jq .login)/cs50-workspace
   ```
   This downloads the files into a new folder called `cs50-workspace`.
+<details>
+<summary>Show screenshot</summary>
+
 <img height="88" alt="image" src="https://github.com/user-attachments/assets/c588975d-f1a2-4855-a2b6-201fc111946a" />
 
+</details>
+
 * Open that folder in VSCodium: File >> Open Folder... and select the `cs50-workspace` folder you just cloned.
+<details>
+<summary>Show screenshot</summary>
+
 <img height="120" alt="Screenshot 2026-09-17 at 11 45 15 AM" src="https://github.com/user-attachments/assets/358efd61-94f3-4f54-a55a-2e07e1e7841c" />
+
+</details>
 
 * You'll know this worked when you can see some files show up on the left like `python-test` and `README.md`
 
