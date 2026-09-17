@@ -1,1 +1,1 @@
-githooks/prepare-commit-msg text eol=lf
+.setup/prepare-commit-msg text eol=lf

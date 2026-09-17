@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Installs a git hook that appends insertion/deletion stats to GitDoc's autosave
-commit messages. Run once with: python3 setup-hooks.py
+commit messages. Run once with: python3 .setup/setup-hooks.py
 """
 import os
 import shutil
@@ -10,7 +10,7 @@ import subprocess
 import sys
 
 HOOK_NAME = "prepare-commit-msg"
-HOOK_SOURCE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "githooks", HOOK_NAME)
+HOOK_SOURCE = os.path.join(os.path.dirname(os.path.abspath(__file__)), HOOK_NAME)
 TEMPLATE_DIR = os.path.join(os.path.expanduser("~"), ".git-templates")
 
 

@@ -13,7 +13,7 @@ vendor/
 !/.devcontainer.json
 !/.vscode/settings.json
 !/.gitattributes
-!/githooks/prepare-commit-msg
+!/.setup/prepare-commit-msg
 
 # But don't ignore these types of files
 !*.c
