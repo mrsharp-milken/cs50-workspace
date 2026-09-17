@@ -16,10 +16,9 @@ Use this repository to work on your projects locally! Developing locally lets us
   ```
   python3 --version
   ```
-  ```
-  python3 -m tkinter
-  ```
-  The first command should print something starting with `Python 3.13.`. The second should pop open a small test window with buttons — if that appears, `tkinter` is working. Close it when done.
+  This command should print something starting with `Python 3.13.`, which tells us Python installed correctly!
+<img height="329" alt="image" src="https://github.com/user-attachments/assets/197381be-c33f-47c2-aa43-8888d9e25bbe" />
+
 
 ### B - Install Homebrew
 
@@ -33,13 +32,17 @@ Homebrew is a "package manager" — instead of hunting down installer files on t
 
 > [!IMPORTANT]
 > At the end, the installer prints 1–2 "Next steps" commands to add Homebrew to your PATH (something like `echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile` followed by `eval "$(/opt/homebrew/bin/brew shellenv)"`). Copy and run exactly what it shows — skipping this means the `brew` command won't work in new terminal windows.
->
-> <!-- TODO: screenshot of the installer's "Next steps" output -->
+<img width="804" height="455" alt="Screenshot 2026-09-17 at 12 04 39 PM" src="https://github.com/user-attachments/assets/f1c06bc1-b229-41c3-99b8-ec0d2b14be35" />
+
+<br/>
 
 * Verify it worked (in Terminal):
   ```
   brew --version
   ```
+_If not, go back and make sure you ran the 2-3 commands that printed when homebrew finished installing._
+
+<br/>
 
 ### C - Install the Rest with Homebrew
 
@@ -140,17 +143,27 @@ Now switch to the profile you just imported.
 ### D - Create Your Own Copy of the Repo
 
 Come back here to GitHub and create your own copy of this repository. 
-* Copy this name, you'll need it later: `cs50-workspace`
+* Copy this name, you'll need it later:
+```
+cs50-workspace
+```
+
 * Scroll up and click the green "Use as Template" button in the upper right of [this page](https://github.com/mrsharp-milken/cs50-workspace/tree/main).
+<img height="352" alt="Screenshot 2026-09-17 at 11 50 55 AM" src="https://github.com/user-attachments/assets/1e283dae-057f-4f10-b277-9119358e613b" />
+
 * Paste `cs50-workspace` as the repository name (name must be exact!)
 * **Make sure the repository is Private**
 * (the other settings don't matter)
+<img height="352" alt="Screenshot 2026-09-17 at 11 51 39 AM" src="https://github.com/user-attachments/assets/21183a32-7c4f-46da-bb86-b77af68b643f" />
+
+
 
 <br/>
 
 ### E - Clone Your Repo
 
-Now you'll download the starter files from your GitHub repo using the terminal.
+Go back to VSCodium
+
 * Open a terminal in VSCodium: Terminal >> New Terminal (top menu bar).
 <img height="87" alt="image" src="https://github.com/user-attachments/assets/a5f43ddf-8225-4874-9808-e14918974ca6" />
 
