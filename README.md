@@ -78,7 +78,12 @@ _You're good if you see a version number, like `gh version 2.43.1 (2024-01-31)` 
 
 ### C - Log In with GitHub CLI
 
-Now we want to login and connect GitHub CLI with GitHub. Type this command: `gh auth login`. Then (using your keyboard) select the following options:
+Now we want to login and connect GitHub CLI with GitHub. Type this command: 
+```terminal
+gh auth login
+```
+
+Then (using your keyboard) select the following options:
 * Where do you use GitHub? **GitHub.com**
 * What is your preferred protocol for Git operations on this host? **HTTPS**
 * Authenticate Git with your GitHub credentials? **Y**
@@ -96,15 +101,23 @@ Once you've finished those steps successfully, quit Terminal.
 
 ## 3. Set Up Your Project in VSCodium
 
-### A - Download the VSCodium Profile
+### A - Copy the Profile URL
 
-Download the `mrsharp-student` VSCodium Profile [clicking the download button at this link](https://github.com/mrsharp-milken/cs50-workspace/blob/main/mrsharp-student.code-profile) - this will help us install and setup all of the important extensions and settings for you after we import it.
-<img width="1190" height="344" alt="Screenshot 2025-09-07 at 8 03 34 PM" src="https://github.com/user-attachments/assets/1029b7dd-05bd-4ea1-b280-e61c74c7fcc3" />
+Copy this URL - you'll paste it into VSCodium in the next step:
+
+```
+https://raw.githubusercontent.com/mrsharp-milken/cs50-workspace/main/mrsharp-student.code-profile
+```
 
 ### B - Import the Profile
 
-Import the profile and its settings! Open VSCodium (this is an app you just downloaded), then click the gear icon at the bottom of the left sidebar. Click "Profiles" >> Blue Arrow dropdown next to "New Profile" >> "Import Profile" >> "Select File" and choose the file you just downloaded, with the name `mrsharp-student.code-profile`. If it worked, you should see a small loading indicator on the bottom of your VSCodium window.
+Import the profile and its settings! Open VSCodium (this is an app you just downloaded), then:
+* Click the gear icon at the bottom of the left sidebar.
+* Click "Profiles" >> Blue Arrow dropdown next to "New Profile" >> "Import Profile".
 <img width="668" height="179" alt="image" src="https://github.com/user-attachments/assets/da9b7e36-fcf6-4b5c-aec4-0f511d0798b2" />
+* A text box will appear at the top of the window - paste the URL you just copied and press Enter.
+* You should see a small loading indicator on the bottom of your VSCodium window, followed by a preview of what's being imported.
+* Click "Import" to confirm.
 
 ### C - Select the Profile
 
@@ -123,10 +136,6 @@ Come back here to GitHub and create your own copy of this repository. Click the 
 
 Now you'll download the starter files from your GitHub repo using the terminal.
 * Open a terminal in VSCodium: Terminal >> New Terminal (top menu bar).
-* `cd` into a folder you'll remember, like your Desktop or Documents:
-  ```
-  cd ~/Desktop
-  ```
 * Clone your repo:
   ```
   gh repo clone $(gh api user --jq .login)/cs50-workspace
