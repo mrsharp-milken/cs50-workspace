@@ -42,7 +42,6 @@ def main():
 
     dest = install_into(os.path.join(result.stdout.strip(), "hooks"))
     print(f"Installed hook into this repo: {dest}")
-    print("Done! New GitDoc autosave commits will include insertion/deletion stats.")
 
 
 if __name__ == "__main__":
