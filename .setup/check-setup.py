@@ -4,12 +4,19 @@ import re
 import shutil
 import subprocess
 import sys
+from pathlib import Path
 
 REQUIRED_EXTENSIONS = {
     "vsls-contrib.gitdoc": "GitDoc (autosave)",
     "ms-python.python": "Python",
     "ms-python.autopep8": "autopep8",
     "ms-python.debugpy": "Python Debugger",
+}
+
+# Installed from the .vsix in .setup, so it must be in the student profile
+# specifically (installing it into the Default profile doesn't count).
+PROFILE_EXTENSIONS = {
+    "mrsharp.ddb50": "CS50 Duck",
 }
 
 TEMPLATE_REPO = "mrsharp-milken/cs50-workspace"
@@ -111,6 +118,18 @@ def check_repo(login):
         warn("not inside a git repo", "run this from inside your cs50-workspace folder")
         return
 
+    code, root, _ = run(["git", "rev-parse", "--show-toplevel"])
+    if code == 0 and root:
+        root_path = Path(root).resolve()
+        if root_path.parent == Path.home().resolve():
+            ok("repo location", str(root_path))
+        else:
+            warn(
+                "repo is not directly in your home folder",
+                f"found at {root_path} — it works there, but moving the cs50-workspace folder to "
+                f"{Path.home()} (then reopening it in VSCodium) keeps things simple",
+            )
+
     code, url, _ = run(["git", "remote", "get-url", "origin"])
     if code != 0 or not url:
         fail("git remote 'origin' configured", "see the Autosaving section of the README")
@@ -153,16 +172,28 @@ def check_extensions():
     # Extensions imported via a .code-profile land in an isolated profile, not
     # the Default one, and are only active in the GUI once that workspace is
     # opened — so also check the profile(s) students may have imported.
+    in_profile = set()
     for profile in STUDENT_PROFILES:
         code, output, _ = run([codium, "--list-extensions", "--profile", profile])
         if code == 0:
-            installed |= set(output.splitlines())
+            in_profile |= set(output.splitlines())
+    installed |= in_profile
 
     for ext_id, label in REQUIRED_EXTENSIONS.items():
         if ext_id in installed:
             ok(label)
         else:
             fail(label, f"extension '{ext_id}' not found — re-import the profile from the README")
+
+    for ext_id, label in PROFILE_EXTENSIONS.items():
+        if ext_id in in_profile:
+            ok(label)
+        else:
+            fail(
+                label,
+                f"extension '{ext_id}' not found in the {STUDENT_PROFILES[0]} profile — "
+                "run the install command in the 'Install the CS50 Duck' section of the README",
+            )
 
 
 def main():

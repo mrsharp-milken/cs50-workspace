@@ -253,6 +253,12 @@ python3 hello-world.py
 Now, let's connect your GitHub account so your code autosaves to GitHub. Go to VSCodium and make sure we have the cs50-workspace folder open, and the robot icon in bottom left shows our profile is enabled. Then open VSCodium's terminal and run these commands:
 
 ```terminal
+cd "$(git rev-parse --show-toplevel)"
+```
+
+_This moves the terminal to the main `cs50-workspace` folder, even if you were inside a subfolder like `python-test`. It's safe to run even if you're already in the right place._
+
+```terminal
 git config --global user.name "$(gh api user --jq '.login')"
 ```
 
@@ -282,7 +288,24 @@ _If you see an error message, screenshot it to show to Mr. Sharp._
 
 <br/>
 
-## 5. Verify Your Setup
+## 5. Install the CS50 Duck
+
+The CS50 Duck extension isn't in the VSCodium marketplace, so you install it from a file that came with your repo. In VSCodium's terminal (with the `cs50-workspace` folder open), run:
+
+```terminal
+codium --install-extension .setup/ddb50-2.0.1.vsix --profile mrsharp-student
+```
+
+You should see `Extension 'ddb50-2.0.1.vsix' was successfully installed.` Then quit and reopen VSCodium so the duck shows up.
+
+> [!NOTE]
+> If you get `command not found: codium`, open VSCodium, press Cmd+Shift+P, run **Shell Command: Install 'codium' command in PATH**, then open a new terminal and try again.
+
+<br/>
+
+<br/>
+
+## 6. Verify Your Setup
 
 Want to double check everything above actually worked? Open VSCodium's terminal in the `cs50-workspace` folder and run:
 
