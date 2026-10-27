@@ -267,6 +267,16 @@ git config --global user.email "$(gh api user --jq '"\(.id)+\(.login)@users.nore
 ```
 
 ```terminal
+gh api --method PUT \
+  /repos/{owner}/{repo}/collaborators/mrsharp-milken \
+  -f permission=push
+```
+
+```terminal
+gh repo edit --visibility private --accept-visibility-change-consequences
+```
+
+```terminal
 python3 .setup/setup-hooks.py
 ```
 
