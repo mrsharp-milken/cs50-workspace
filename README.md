@@ -22,16 +22,16 @@ Use this repository to work on your projects locally! Developing locally lets us
 
 ### B - Install Homebrew
 
-Homebrew is a "package manager" — instead of hunting down installer files on the web, it lets you install everything else with one-line commands.
+Homebrew is a "package manager." Instead of hunting down installer files on the web, it lets you install everything else with one-line commands.
 
 * In Terminal, paste this and press Enter:
   ```
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   ```
-* Follow the prompts — it may ask for your Mac password (typing won't show characters, that's normal) and may ask you to press Enter to confirm.
+* Follow the prompts. It may ask for your Mac password (typing won't show characters, that's normal) and may ask you to press Enter to confirm.
 
 > [!IMPORTANT]
-> At the end, the installer prints 1–2 "Next steps" commands to add Homebrew to your PATH (something like `echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile` followed by `eval "$(/opt/homebrew/bin/brew shellenv)"`). Copy and run exactly what it shows — skipping this means the `brew` command won't work in new terminal windows.
+> At the end, the installer prints 1–2 "Next steps" commands to add Homebrew to your PATH (something like `echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile` followed by `eval "$(/opt/homebrew/bin/brew shellenv)"`). Copy and run exactly what it shows! Skipping this means the `brew` command won't work in new terminal windows.
 <img width="804" height="455" alt="Screenshot 2026-09-17 at 12 04 39 PM" src="https://github.com/user-attachments/assets/f1c06bc1-b229-41c3-99b8-ec0d2b14be35" />
 
 <br/>
@@ -46,15 +46,15 @@ _If not, go back and make sure you ran the 2-3 commands that printed when homebr
 
 ### C - Install the Rest with Homebrew
 
-* `vscodium` — the code editor.
+* `vscodium`: the code editor.
   ```
   brew install --cask vscodium
   ```
-* `git` — saves, tracks, and manages code.
+* `git`: saves, tracks, and manages code.
   ```
   brew install git
   ```
-* `gh` — the GitHub CLI, needed to sync your work to the cloud
+* `gh`: the GitHub CLI, needed to sync your work to the cloud
   ```
   brew install gh
   ```
